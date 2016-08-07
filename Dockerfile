@@ -41,7 +41,7 @@ RUN chown -R jboss:jboss $JBOSS_HOME/standalone
 WORKDIR /opt/jboss/wildfly/standalone/configuration/certs
 
 # Execute the script to generate self signed certificates
-RUN ./certificate.sh
+# RUN ./certificate.sh
 
 # Switch to the working dir /opt/jboss/wildfly
 WORKDIR /opt/jboss/wildfly
