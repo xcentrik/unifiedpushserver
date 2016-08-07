@@ -1,6 +1,6 @@
 FROM jboss/wildfly:10.0.0.Final
 
-Maintanainer Andrij David <andrijdavid@xcentrik.online>
+#Maintanainer Andrij David <andrijdavid@xcentrik.online>
 
 # Download Aerogear distribution
 ENV UPSVER=1.1.3.Final
