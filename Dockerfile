@@ -19,7 +19,7 @@ USER root
 
 # Clean the metadata
 # install openssl needed for certificate
-RUN yum update \
+RUN yum update -y \
 	&& yum install -y unzip wget openssl \
 	&& yum -q clean all
 

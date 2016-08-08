@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DOMAIN="aerogear.dev"
+DOMAIN="push.xcentrik.online"
 
 SERVER_PASSWORD=$(head -c 2000 /dev/urandom | tr -dc a-z0-9A-Z | head -c 256)
 
