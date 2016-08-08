@@ -11,11 +11,6 @@ else
     echo "We are Offline"
 fi
 
-#Get Host Ip
-hostip=$(ip route show | awk '/default/ {print $3}')
-echo " Host ip address is : "
-echo $hostip
-
 # run migrator
 echo "Starting Liquibase migration"
 cd $UPSDIST/migrator/ups-migrator

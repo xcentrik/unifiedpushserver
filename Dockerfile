@@ -13,7 +13,6 @@ ENV MAVEN_OPTS -Xmx768m -XX:+UseConcMarkSweepGC -XX:MaxPermSize=128m -XX:+CMSCla
 
 # ENV variable
 RUN export DOMAIN=$DOMAIN
-RUN export HOSTIP=$(ip route show | grep eth0 | awk '{print $9}')
 
 USER root
 
