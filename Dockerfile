@@ -12,8 +12,8 @@ ENV DOMAIN=aerogear.dev
 ENV MAVEN_OPTS -Xmx768m -XX:+UseConcMarkSweepGC -XX:MaxPermSize=128m -XX:+CMSClassUnloadingEnabled
 
 # ENV variable
-CMD export DOMAIN=$DOMAIN
-CMD export HOSTIP=$(ip route show | grep eth0 | awk '{print $9}')
+RUN export DOMAIN=$DOMAIN
+RUN export HOSTIP=$(ip route show | grep eth0 | awk '{print $9}')
 
 USER root
 
